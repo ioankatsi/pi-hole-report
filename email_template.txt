@@ -1,0 +1,64 @@
+<html>
+<head>
+<style>
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+th, td {
+  padding: 5px;
+  text-align: left;
+}
+</style>
+</head>
+<body bgcolor="#ffffff" text="#000000">
+
+<h2>Pi Hole Montly Report - {{report_for_month}}</h2>
+
+<table style="width:100%">
+  <tr>
+  	<th>Metrics</th>
+    <th>Previous Month</th>
+    <th>Current Month</th>
+    <th>Rate of Change</th>
+  </tr>
+  <tr>
+    <td>domains being blocked</td>
+    <td>{{prev_month_domains_blocked}}</td>
+    <td>{{this_month_domains_blocked}}</td>
+    <td>{{diff_month_domains_blocked}}</td>
+  </tr>
+  <tr>
+    <td>ads blocked</td>
+    <td>{{prev_month_ads_blocked}}</td>
+    <td>{{this_month_ads_blocked}}</td>
+    <td>{{diff_month_ads_blocked}}</td>
+  </tr>
+  <tr>
+    <td>ads percentage</td>
+    <td>{{prev_month_ads_percentage}}</td>
+    <td>{{this_month_ads_percentage}}</td>
+    <td>{{diff_month_ads_percentage}}</td>
+  </tr>
+  <tr>
+    <td>unique domains</td>
+    <td>{{prev_month_unique_domains}}</td>
+    <td>{{this_month_unique_domains}}</td>
+    <td>{{diff_month_unique_domains}}</td>
+  </tr>
+  <tr>
+    <td>clients ever seen</td>
+    <td>{{prev_month_clients_ever_seen}}</td>
+    <td>{{this_month_clients_ever_seen}}</td>
+    <td>{{diff_month_clients_ever_seen}}</td>
+  </tr>
+  <tr>
+  <td>unique clients</td>
+    <td>{{prev_month_unique_clients}}</td>
+    <td>{{this_month_unique_clients}}</td>
+    <td>{{diff_month_unique_clients}}</td>
+  </tr>
+</table>
+
+</body>
+</html>
